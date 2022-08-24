@@ -21,7 +21,7 @@ func main() {
 			continue
 		}
 		// serva a conexão estabelecida
-		handleConn(conn)
+		go handleConn(conn)
 	}
 }
 
